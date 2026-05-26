@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddDatabase(builder.Configuration);
+builder.Services.AddDependencyInjection();
 builder.Services.AddSwaggerGen(options =>
 {
     options.OperationFilter<LowercaseQueryParameterFilter>();
