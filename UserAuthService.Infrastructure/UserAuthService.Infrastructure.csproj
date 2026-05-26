@@ -23,4 +23,9 @@
     <ProjectReference Include="..\UserAuthService.Domain\UserAuthService.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persitence\UnitOfWork\" />
+    <Folder Include="Persitence\Repository\" />
+  </ItemGroup>
+
 </Project>

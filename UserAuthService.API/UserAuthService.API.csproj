@@ -14,4 +14,8 @@
     <ProjectReference Include="..\UserAuthService.Application\UserAuthService.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+
 </Project>

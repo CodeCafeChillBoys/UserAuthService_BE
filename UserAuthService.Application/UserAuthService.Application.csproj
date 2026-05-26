@@ -10,4 +10,12 @@
     <ProjectReference Include="..\UserAuthService.Infrastructure\UserAuthService.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="IUseCase\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Utility\" />
+    <Folder Include="UseCase\" />
+  </ItemGroup>
+
 </Project>
