@@ -1,6 +1,14 @@
+using UserAuthService.API.Configurations;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDatabase(builder.Configuration);
+builder.Services.AddSwaggerGen(options =>
+{
+    options.OperationFilter<LowercaseQueryParameterFilter>();
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
